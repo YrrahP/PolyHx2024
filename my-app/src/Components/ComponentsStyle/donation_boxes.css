@@ -1,0 +1,17 @@
+.flat-button {
+    background-color: #4CAF50; /* Couleur de fond */
+    border: none;
+    color: white; /* Couleur du texte */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+.flat-button:hover {
+    background-color: #45a049; /* Changement de couleur au survol */
+}

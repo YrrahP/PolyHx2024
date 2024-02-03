@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.css'; // Assurez-vous d'inclure la feuille de style
+import './ComponentsStyle/donation_boxes.css'; // Assurez-vous d'inclure la feuille de style
 
 const Button = ({ text, style }) => {
     return (
