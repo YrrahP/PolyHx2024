@@ -13,8 +13,30 @@ function App() {
   return (      
     <div className="App">
       <Header />
-      <ButtonDonBox />
-      <MapComponent selectedLocation={selectedLocation} />
+      <div className='button-container'>
+        <ButtonDonBox 
+        text = "Boîte de dons"
+        style={{ 
+          top: '300px', 
+          left: '300px' 
+        }}/>
+        <ButtonDonBox 
+        text = "Boîte de dons"
+        style={{ 
+          top: '300px', 
+          left: '600px' 
+        }}/>
+        <ButtonDonBox 
+        text = "Boîte de dons"
+        style={{ 
+          top: '300px', 
+          left: '900px' 
+        }}/>
+      </div>
+      <div className='map-container'>
+        <MapComponent selectedLocation={selectedLocation} />
+      </div>
+      
     </div>
   );
 }
