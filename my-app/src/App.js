@@ -101,7 +101,7 @@ function App() {
       </div>
       <div className='result-container'>
         <div className='location-info'>
-          <LocationGrid locations={locations} />
+          <LocationGrid locations={locations} userLocation={userLocation} />
         </div>
         <div className='map-container'>
           <MapComponent selectedLocation={selectedLocation} locations={locations} userLocation={userLocation}/>
