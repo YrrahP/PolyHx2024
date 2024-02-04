@@ -1,4 +1,5 @@
 import './App.css';
+import React, {useState} from "react";
 import ButtonDonBox from "./Components/Button/donation_boxes";
 import ButtonDonFood from "./Components/Button/food_donation";
 import ButtonTrashCan from "./Components/Button/Trashcans";
@@ -36,14 +37,14 @@ const App = () => {
           left: '300px' 
         }}/>
         <ButtonDonFood 
-        text = "Boîte de dons"
+        text = "Banque alimentaire"
         onClick = {ButtonClickDonFood}
         style={{ 
           top: '300px', 
           left: '600px' 
         }}/>
         <ButtonTrashCan 
-        text = "Boîte de dons"
+        text = "Collecteur de déchêts"
         onClick = {ButtonClickTrashCan}
         style={{ 
           top: '300px', 
