@@ -12,7 +12,7 @@ const LocationGrid = ({ locations, userLocation }) => {
                     {/* Afficher la distance si userLocation est défini */}
                     {userLocation && (
                         <p className="distance-info">
-                            {calculateDistance(userLocation.latitude, userLocation.longitude, location.location.latitude, location.location.longitude).toFixed(2)} m
+                            {Math.round(calculateDistance(userLocation.latitude, userLocation.longitude, location.location.latitude, location.location.longitude))} m
                         </p>
                     )}
                 </div>
