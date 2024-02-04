@@ -10,4 +10,4 @@ const ButtonRegister = ({ text, style, onClick }) => {
     );
 };
 
-export default ButtonDonBox;
+export default ButtonRegister;

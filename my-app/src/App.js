@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import React, { useState, useEffect } from 'react';
 import './App.css';
 import ButtonDonBox from "./Components/Button/donation_boxes.js";
 import ButtonDonFood from "./Components/Button/food_donation.js";
@@ -74,46 +73,22 @@ function App() {
         <ButtonDonBox 
           text="Boîte de dons vêtements"
           onClick={ButtonClickDonBox}
-          style={{ top: '300px', left: '300px' }}
         />
-        <ButtonDonFood 
-        text = "Boîte de dons"
-        onClick = {ButtonClickDonBox}
-        style={{ 
-          top: '300px', 
-          left: '300px' 
-        }}/>
         <ButtonDonFood 
         text = "Banque alimentaire"
         onClick = {ButtonClickDonFood}
-        style={{ 
-          top: '300px', 
-          left: '600px' 
-        }}/>
+        />
         <ButtonTrashCan 
         text = "Poubelles"
         onClick = {ButtonClickTrashCan}
-        style={{ 
-          top: '300px', 
-          left: '900px' 
-        }}/>
+        />
       </div>
       <div className='slider'>
         <Distance onDistanceChange={handleDistanceChange} />
       </div>
-      <div className='filter-container'>
-      <div className='leftSide'>
-        <LocationGrid locations={locations} />
-      </div>
-      <div className='rightSide'>
-          <MapComponent selectedLocation={selectedLocation}  locations={locations} />
-      </div>
-      </div>
-
-      <Distance onDistanceChange={handleDistanceChange} />
       <LocationGrid locations={locations} />
+      <MapComponent selectedLocation={selectedLocation}  locations={locations} />
     </div>
-    
   );
 }
 

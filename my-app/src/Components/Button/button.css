@@ -10,7 +10,7 @@
     cursor: pointer;
     transition: background-color 0.3s; /* Transition pour l'effet de survol */
     border-radius: 30px;
-    position: absolute;
+    width: 300px;
 }
 
 .flat-button:hover {

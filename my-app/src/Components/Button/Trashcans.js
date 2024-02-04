@@ -10,4 +10,3 @@ const ButtonTrashCan = ({ text, style, onClick }) => {
 };
 
 export default ButtonTrashCan;
-export default ButtonTrashCan;

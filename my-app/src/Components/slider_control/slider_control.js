@@ -11,7 +11,7 @@ function Distance({ onDistanceChange }) {
     };
 
     return (
-        <div>
+        <div className="slider-container">
             <input
                 className={data > 50 ? 'heigh' : 'less'}
                 type="range"
