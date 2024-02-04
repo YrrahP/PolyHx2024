@@ -1,5 +1,5 @@
 import './App.css';
-import ButtonDonBox from "./Components/donation_boxes/donation_boxes";
+import ButtonDonBox from "./Components/Button/donation_boxes";
 import Header from "./Components/Header/header"
 
 function App() {
