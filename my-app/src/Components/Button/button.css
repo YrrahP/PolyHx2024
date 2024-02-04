@@ -2,14 +2,15 @@
     background-color: #017b05; /* Couleur de fond */
     border: none;
     color: white; /* Couleur du texte */
-    padding: 10px 20px;
+    padding: 15px 60px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 6px 2px;
     cursor: pointer;
     transition: background-color 0.3s; /* Transition pour l'effet de survol */
+    border-radius: 30px;
 }
 
 .flat-button:hover {
