@@ -104,7 +104,7 @@ function App() {
           <LocationGrid locations={locations} />
         </div>
         <div className='map-container'>
-          <MapComponent selectedLocation={selectedLocation}  locations={locations} userLocation={userLocation}/>
+          <MapComponent selectedLocation={selectedLocation} locations={locations} userLocation={userLocation}/>
         </div>
       
       </div>

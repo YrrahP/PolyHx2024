@@ -42,20 +42,6 @@ const MapComponent = ({ selectedLocation, locations, userLocation }) => {
             }}
           />
         ))}
-        {selectedLocation && (
-          <Marker
-            position={{
-              lat: selectedLocation.lat,
-              lng: selectedLocation.lng,
-            }}
-            icon={{
-              url: getMarkerIcon("positionIcon"),
-              scaledSize: new window.google.maps.Size(40, 40),
-            }}
-          />
-        )}  
-       
-
         {userLocation && (
             <Marker
                 position={{
@@ -63,7 +49,8 @@ const MapComponent = ({ selectedLocation, locations, userLocation }) => {
                     lng: userLocation.longitude
                 }}
                 icon={{
-                    url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" // URL de l'icône bleue
+                  url: getMarkerIcon("positionIcon"),
+                  scaledSize: new window.google.maps.Size(40, 40),
                 }}
             />
         )}
