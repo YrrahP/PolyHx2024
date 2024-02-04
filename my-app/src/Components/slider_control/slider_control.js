@@ -9,7 +9,9 @@ function Distance({ onDistanceChange }) {
         setData(newValue);
         onDistanceChange(newValue);
     };
-
+    const displayDistance = (value) => {
+        return value > 1000 ? `${(value / 1000).toFixed(2)} kilomètres` : `${value} mètres`;
+    }
     return (
         <div className="slider-container">
             <input
@@ -21,7 +23,7 @@ function Distance({ onDistanceChange }) {
                 value={data}
                 onChange={handleChange}
             />
-            <h1 className="distance-text">{data} mètres</h1>
+            <h1 className="distance-text">{displayDistance(data)}</h1>
         </div>
     );
 }
