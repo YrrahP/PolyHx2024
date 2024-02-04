@@ -1,0 +1,13 @@
+.distance-text {
+    color: red; /* Couleur du texte en rouge */
+    font-size: 20px; /* Taille de la police */
+    margin-top: 10px; /* Espacement au-dessus du texte */
+}
+
+.heigh {
+    background-color: purple;
+}
+
+.less {
+    background-color: lightblue; 
+}

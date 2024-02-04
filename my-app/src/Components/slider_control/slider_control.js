@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import './slider_control.css';
 
 function Distance({ onDistanceChange }) {
@@ -7,13 +7,21 @@ function Distance({ onDistanceChange }) {
     const handleChange = (e) => {
         const newValue = e.target.value;
         setData(newValue);
-        onDistanceChange(newValue); // Appelle la fonction callback
+        onDistanceChange(newValue);
     };
 
     return (
         <div>
-            <input className={data > 50 ? 'heigh' : 'less'} type="range" min="0" max="100" step="1" value={data} onChange={handleChange} />
-            <h1>{data}</h1>
+            <input
+                className={data > 50 ? 'heigh' : 'less'}
+                type="range"
+                min="0"
+                max="100"
+                step="1"
+                value={data}
+                onChange={handleChange}
+            />
+            <h1 className="distance-text">{data} mètres</h1>
         </div>
     );
 }
