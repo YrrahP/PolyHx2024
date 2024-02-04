@@ -5,7 +5,7 @@ import getMarkerIcon from "./CustomMarker";
 
 const GOOGLE_MAPS_KEY = "AIzaSyB1kropwH-5_iC-C5omKlgfw0XTKBUvNIU";
 
-const MapComponent = ({ selectedLocation, locations }) => {
+const MapComponent = ({ selectedLocation, locations, userLocation }) => {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: GOOGLE_MAPS_KEY
   });
@@ -55,6 +55,18 @@ const MapComponent = ({ selectedLocation, locations }) => {
           />
         )}  
        
+
+        {userLocation && (
+            <Marker
+                position={{
+                    lat: userLocation.latitude,
+                    lng: userLocation.longitude
+                }}
+                icon={{
+                    url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" // URL de l'icône bleue
+                }}
+            />
+        )}
 
       </GoogleMap>
     </div>

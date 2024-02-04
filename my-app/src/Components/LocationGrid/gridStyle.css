@@ -1,15 +1,27 @@
 .location-card {
-    border: 1px solid #ccc;
+    background-color: #069A8E;
     margin-bottom: 10px;
     padding: 10px;
+    border-radius: 20px
   }
   
   .location-card h3 {
-    margin: 0;
-    color: #333;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 3px;
+    color: white;
   }
   
   .location-card p {
+    margin-top: 5px;
+    margin-left: 20px;
     font-size: 14px;
+    color: white
   }
-  
+
+  @media (max-width: 600px) {
+    .location-card {
+      margin: 10px;
+    }
+  }

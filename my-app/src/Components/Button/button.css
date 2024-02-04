@@ -1,5 +1,5 @@
 .flat-button {
-    background-color: #017b05; /* Couleur de fond */
+    background-color: #068379; /* Couleur de fond */
     border: none;
     color: white; /* Couleur du texte */
     padding: 15px 60px;
@@ -14,5 +14,5 @@
 }
 
 .flat-button:hover {
-    background-color: #45a049; /* Changement de couleur au survol */
+    background-color: #0A4D68; /* Changement de couleur au survol */
 }

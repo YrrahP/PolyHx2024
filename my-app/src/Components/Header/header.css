@@ -1,7 +1,14 @@
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     padding: 10px;
     font-size: 26px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.name {
+    font-size: 20px;
+    align-items: center;
 }

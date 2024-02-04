@@ -10,12 +10,18 @@ function Distance({ onDistanceChange }) {
         onDistanceChange(newValue);
     };
     const displayDistance = (value) => {
-        return value > 1000 ? `${(value / 1000).toFixed(2)} kilomètres` : `${value} mètres`;
+        return value > 1000 ? `${(value / 1000).toFixed(2)} km` : `${value} m`;
     }
+    const trackStyle = {
+        backgroundColor: 'red', // Couleur conditionnelle
+    };
+
+
     return (
         <div className="slider-container">
             <input
                 className={data > 50 ? 'heigh' : 'less'}
+                style={trackStyle}
                 type="range"
                 min="0"
                 max="10000"
