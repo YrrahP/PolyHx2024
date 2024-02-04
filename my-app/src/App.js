@@ -86,8 +86,16 @@ function App() {
       <div className='slider'>
         <Distance onDistanceChange={handleDistanceChange} />
       </div>
-      <LocationGrid locations={locations} />
-      <MapComponent selectedLocation={selectedLocation}  locations={locations} />
+      <div className='filter-container'>
+        <div className='location-info'>
+          <LocationGrid locations={locations} />
+        </div>
+        <div className='map-container'>
+          <MapComponent selectedLocation={selectedLocation}  locations={locations} />
+        </div>
+      
+      </div>
+      
     </div>
   );
 }
