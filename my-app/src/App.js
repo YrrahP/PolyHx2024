@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import ButtonDonBox from "./Components/Button/donation_boxes";
-import ButtonDonFood from "./Components/Button/food_donation";
-import ButtonTrashCan from "./Components/Button/Trashcans";
-import Header from "./Components/Header/header";
 import ButtonDonBox from "./Components/Button/donation_boxes.js";
 import ButtonDonFood from "./Components/Button/food_donation.js";
 import ButtonTrashCan from "./Components/Button/Trashcans.js";
@@ -11,40 +7,32 @@ import Header from "./Components/Header/header.js";
 import Distance from './Components/slider_control/slider_control.js'; 
 import LocationGrid from './Components/LocationGrid/grid.js';
 import locationsData from './data/locations.json';
-import { filterLocationsByDistanceAndType } from './Functions/utilityFunctions.js';
+import {filterLocationsByDistanceAndType} from './Functions/utilityFunctions.js';
 
 const App = () => {
-  const [filterType, setFilterType] = useState(null);
-    const ButtonClickDonBox = () => {
-      setFilterType("clothesCan");
-      // Vous pouvez appeler filterLocationsByDistanceAndType ici si nécessaire
-      // Exemple: filterLocationsByDistanceAndType(userLat, userLon, locations, maxDistance, filterType);
-    };
-    const ButtonClickDonFood = () => {
-      setFilterType("foodCan");
-      // Vous pouvez appeler filterLocationsByDistanceAndType ici si nécessaire
-      // Exemple: filterLocationsByDistanceAndType(userLat, userLon, locations, maxDistance, filterType);
-    }
-    const ButtonClickTrashCan = () => {
-      setFilterType("trashCan");
-      // Vous pouvez appeler filterLocationsByDistanceAndType ici si nécessaire
-      // Exemple: filterLocationsByDistanceAndType(userLat, userLon, locations, maxDistance, filterType);
+  const [filterType, setFilterType] = useState('');
   const [locations, setLocations] = useState([]);
   const [userLocation, setUserLocation] = useState({ latitude: 0, longitude: 0 });
   const [maxDistance, setMaxDistance] = useState(0);
 
   const ButtonClickDonBox = () => {
     setFilterType("clothesCan");
+    console.log(filterType);
   };
   const ButtonClickDonFood = () => {
     setFilterType("foodCan");
+    console.log(filterType);
+
   }
   const ButtonClickTrashCan = () => {
     setFilterType("trashCan");
+    console.log(filterType);
+
   }
 
   const handleDistanceChange = (newDistance) => {
     setMaxDistance(newDistance);
+    console.log(newDistance);
   };
 
   useEffect(() => {
@@ -69,6 +57,7 @@ const App = () => {
       filterType
     );
     setLocations(filteredLocations);
+    console.log(filteredLocations);
   }, [filterType, userLocation, maxDistance]);
 
   return (
@@ -84,14 +73,14 @@ const App = () => {
           left: '300px' 
         }}/>
         <ButtonDonFood 
-        text = "Boîte de dons"
+        text = "Banque alimentaire"
         onClick = {ButtonClickDonFood}
         style={{ 
           top: '300px', 
           left: '600px' 
         }}/>
         <ButtonTrashCan 
-        text = "Boîte de dons"
+        text = "Poubelles"
         onClick = {ButtonClickTrashCan}
         style={{ 
           top: '300px', 
@@ -103,6 +92,6 @@ const App = () => {
       <LocationGrid locations={locations} />
     </div>
   );
-}}
+}
 
 export default App;

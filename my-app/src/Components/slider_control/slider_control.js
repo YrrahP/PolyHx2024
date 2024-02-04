@@ -16,7 +16,7 @@ function Distance({ onDistanceChange }) {
                 className={data > 50 ? 'heigh' : 'less'}
                 type="range"
                 min="0"
-                max="100"
+                max="10000"
                 step="1"
                 value={data}
                 onChange={handleChange}
