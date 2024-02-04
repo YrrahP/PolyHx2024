@@ -3,7 +3,7 @@ import ButtonDonBox from "./Components/Button/donation_boxes";
 import Header from "./Components/Header/header";
 import MapComponent from "./Components/Map/Map";
 import './Components/Header/header.css'
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 function App() {
   const [selectedLocation] = useState({
@@ -12,6 +12,7 @@ function App() {
   });
   return (      
     <div className="App">
+      <h1>ProxyCollect</h1>
       <Header />
       <div className='button-container'>
         <ButtonDonBox 
@@ -33,9 +34,8 @@ function App() {
           left: '900px' 
         }}/>
       </div>
-      <div className='map-container'>
         <MapComponent selectedLocation={selectedLocation} />
-      </div>
+      
       
     </div>
   );
