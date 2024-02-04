@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import { GoogleMap, useLoadScript, Marker} from "@react-google-maps/api";
 import "./map.css";
+import getMarkerIcon from "./CustomMarker";
 
 const GOOGLE_MAPS_KEY = "AIzaSyB1kropwH-5_iC-C5omKlgfw0XTKBUvNIU";
 
@@ -35,8 +36,25 @@ const MapComponent = ({ selectedLocation, locations, userLocation }) => {
               lat: location.location.latitude,
               lng: location.location.longitude
             }}
+            icon={{
+              url: getMarkerIcon(location.type),
+              scaledSize: new window.google.maps.Size(40, 40), 
+            }}
           />
         ))}
+        {selectedLocation && (
+          <Marker
+            position={{
+              lat: selectedLocation.lat,
+              lng: selectedLocation.lng,
+            }}
+            icon={{
+              url: getMarkerIcon("positionIcon"),
+              scaledSize: new window.google.maps.Size(40, 40),
+            }}
+          />
+        )}  
+       
 
         {userLocation && (
             <Marker

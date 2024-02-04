@@ -1,16 +1,21 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRandom } from '@fortawesome/free-solid-svg-icons'
+import clothesIcon from "../../assets/clothes.png";
+import trashIcon from "../../assets/trash.png";
+import foodIcon from "../../assets/foods.png";
+import markerIcon from "../../assets/marker.png";
+import positionIcon from "../../assets/current.png"
 
 const getMarkerIcon = (type) => {
   switch (type) {
     case "trashCan":
-      return <FontAwesomeIcon icon="fa-light fa-trash-can" />
+      return trashIcon;
     case "clothesCan":
-      return "http://maps.google.com/mapfiles/ms/icons/clothingstore.png";
+      return clothesIcon;
     case "foodCan":
-      return "http://maps.google.com/mapfiles/ms/icons/restaurant.png";
+      return foodIcon;
+    case "positionIcon":
+      return positionIcon;
     default:
-      return null;
+      return markerIcon;
   }
 };
 
