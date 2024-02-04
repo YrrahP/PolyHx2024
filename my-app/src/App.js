@@ -1,6 +1,6 @@
 import './App.css';
-import Button from "./Components/donation_boxes";
-import Header from "./Components/header"
+import ButtonDonBox from "./Components/Button/donation_boxes";
+import Header from "./Components/Header/header"
 import MapComponent from "./Components/Map";
 import './Components/ComponentsStyle/header.css'
 import React, { useState } from "react";
@@ -13,7 +13,7 @@ function App() {
   return (      
     <div className="App">
       <Header />
-      <Button />
+      <ButtonDonBox />
       <MapComponent selectedLocation={selectedLocation} />
     </div>
   );
