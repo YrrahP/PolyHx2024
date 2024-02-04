@@ -69,24 +69,26 @@ function App() {
   return (      
     <div className="App">
       <Header />
-      <div className="button-container">
-        <ButtonDonBox 
-          text="Boîte de dons vêtements"
-          onClick={ButtonClickDonBox}
-        />
-        <ButtonDonFood 
-        text = "Banque alimentaire"
-        onClick = {ButtonClickDonFood}
-        />
-        <ButtonTrashCan 
-        text = "Poubelles"
-        onClick = {ButtonClickTrashCan}
-        />
-      </div>
-      <div className='slider'>
-        <Distance onDistanceChange={handleDistanceChange} />
-      </div>
       <div className='filter-container'>
+        <div className="button-container">
+          <ButtonDonBox 
+            text="Boîte de dons vêtements"
+            onClick={ButtonClickDonBox}
+          />
+          <ButtonDonFood 
+          text = "Banque alimentaire"
+          onClick = {ButtonClickDonFood}
+          />
+          <ButtonTrashCan 
+          text = "Poubelles"
+          onClick = {ButtonClickTrashCan}
+          />
+        </div>
+        <div className='slider'>
+          <Distance onDistanceChange={handleDistanceChange} />
+        </div>
+      </div>
+      <div className='result-container'>
         <div className='location-info'>
           <LocationGrid locations={locations} />
         </div>

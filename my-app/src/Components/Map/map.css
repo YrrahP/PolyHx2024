@@ -1,5 +1,10 @@
 .map-container {
     width: 500px;
     height: 500px;
-    margin: 20px auto;
+    margin: 2px auto;
+  }
+
+  .name {
+    font-size: 28px;
+    font-weight: bold;
   }
