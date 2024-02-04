@@ -42,6 +42,19 @@ const MapComponent = ({ selectedLocation, locations }) => {
             }}
           />
         ))}
+        {selectedLocation && (
+          <Marker
+            position={{
+              lat: selectedLocation.lat,
+              lng: selectedLocation.lng,
+            }}
+            icon={{
+              url: getMarkerIcon("positionIcon"),
+              scaledSize: new window.google.maps.Size(40, 40),
+            }}
+          />
+        )}  
+       
 
       </GoogleMap>
     </div>
