@@ -1,5 +1,5 @@
 import React from 'react';
-import './LocationGrid.css';
+import './gridStyle.css';
 
 
 const LocationGrid = ({ locations }) => {
