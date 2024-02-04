@@ -4,6 +4,7 @@ import "./header.css"
 const Header = () => (
     <header>
         <div className="logo">Logo</div>
+        <div className='name'>ProxyCollect</div>
         <div className="language-selector">Fr ▼</div>
     </header>
 );

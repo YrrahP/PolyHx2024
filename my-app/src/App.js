@@ -68,10 +68,8 @@ function App() {
 
   return (      
     <div className="App">
-      <h1>ProxyCollect</h1>
       <Header />
-
-      <div>
+      <div className="button-container">
         <ButtonDonBox 
         text = "Boîte de dons"
         onClick = {ButtonClickDonBox}
@@ -94,10 +92,17 @@ function App() {
           left: '900px' 
         }}/>
       </div>
-
-      <Distance onDistanceChange={handleDistanceChange} />
-      <LocationGrid locations={locations} />
-      <MapComponent selectedLocation={selectedLocation}  locations={locations} />
+      <div className='slider'>
+        <Distance onDistanceChange={handleDistanceChange} />
+      </div>
+      <div className='filter-container'>
+      <div className='leftSide'>
+        <LocationGrid locations={locations} />
+      </div>
+      <div className='rightSide'>
+          <MapComponent selectedLocation={selectedLocation}  locations={locations} />
+      </div>
+      </div>
     </div>
     
   );
