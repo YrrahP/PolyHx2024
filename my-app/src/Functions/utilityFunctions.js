@@ -14,7 +14,7 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 }
 
 
-function filterLocationsByDistanceAndType(userLat, userLon, locations, maxDistance, filterType) {
+export function filterLocationsByDistanceAndType(userLat, userLon, locations, maxDistance, filterType) {
     return locations
         .filter(location => {
             // Filtrer par type si filterType est spécifié
