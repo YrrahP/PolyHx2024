@@ -25,5 +25,23 @@
             "longitude": -73.71365845777146 
         },
         "description": "lieu pour la nourriture proche a saint laurent" 
+    },
+    {
+        "id": 2,
+        "type": "foodCan",
+        "location": {
+            "latitude": 45.43793493578155,
+            "longitude": -73.62507570391486
+        },
+        "description": "lieu pour la nourriture proche de mont-tacos lasalle" 
+    },
+    {
+        "id": 2,
+        "type": "trashCan",
+        "location": {
+            "latitude": 45.44630233232841, 
+            "longitude": -73.60510913393506
+        },
+        "description": "poubelle proche de terminus angrignon" 
     }
 ]
