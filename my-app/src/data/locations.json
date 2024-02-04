@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "type": "trashCan",
+        "location": {
+            "latitude": 45.50173962736477,
+            "longitude": -73.62281760205815
+        },
+        "description": "Poubelle brebeuf"
+    },
+    {
+        "id": 1,
+        "type": "clothesCan",
+        "location": {
+            "latitude": 45.507462297652246, 
+            "longitude": -73.58749299318679
+        },
+        "description": "Boite a vetement mont-royal"
+    },
+    {
+        "id": 1,
+        "type": "foodCan",
+        "location": {
+            "latitude": 45.509745220806245,
+            "longitude": -73.71365845777146 
+        },
+        "description": "lieu pour la nourriture proche a saint laurent" 
+    }
+]
