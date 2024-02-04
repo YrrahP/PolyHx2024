@@ -1,0 +1,15 @@
+.location-card {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .location-card h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .location-card p {
+    font-size: 14px;
+  }
+  

@@ -1,5 +1,6 @@
 import React from "react";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
+import "./map.css"
 
 const GOOGLE_MAPS_KEY = "AIzaSyB1kropwH-5_iC-C5omKlgfw0XTKBUvNIU";
 
@@ -15,10 +16,11 @@ const MapComponent = ({ selectedLocation }) => {
   if (!isLoaded) return "Maps";
 
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div className="map-container">
       <GoogleMap
         mapContainerStyle={{
-          height: "800px",
+          width: "100%",
+          height: "100%"
         }}
         center={selectedLocation}
         zoom={14}

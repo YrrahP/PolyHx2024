@@ -1,6 +1,6 @@
 import './App.css';
 import ButtonDonBox from "./Components/Button/donation_boxes";
-import Header from "./Components/Header/header"
+import Header from "./Components/Header/header";
 import MapComponent from "./Components/Map/Map";
 import './Components/Header/header.css'
 import React, { useState } from "react";
