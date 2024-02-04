@@ -1,7 +1,8 @@
 import React from 'react';
 import './button.css'; // Assurez-vous d'inclure la feuille de style
 
-const ButtonTrashCan = ({ text, style, onClick }) => {
+
+const ButtonRegister = ({ text, style, onClick }) => {
     return (
         <button className="flat-button" style={style} onClick={onClick}>
             {text}
@@ -9,5 +10,4 @@ const ButtonTrashCan = ({ text, style, onClick }) => {
     );
 };
 
-export default ButtonTrashCan;
-export default ButtonTrashCan;
+export default ButtonDonBox;

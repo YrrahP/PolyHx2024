@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import ButtonDonBox from "./Components/Button/donation_boxes.js";
 import ButtonDonFood from "./Components/Button/food_donation.js";
@@ -71,6 +72,11 @@ function App() {
       <Header />
       <div className="button-container">
         <ButtonDonBox 
+          text="Boîte de dons vêtements"
+          onClick={ButtonClickDonBox}
+          style={{ top: '300px', left: '300px' }}
+        />
+        <ButtonDonFood 
         text = "Boîte de dons"
         onClick = {ButtonClickDonBox}
         style={{ 
@@ -103,6 +109,9 @@ function App() {
           <MapComponent selectedLocation={selectedLocation}  locations={locations} />
       </div>
       </div>
+
+      <Distance onDistanceChange={handleDistanceChange} />
+      <LocationGrid locations={locations} />
     </div>
     
   );

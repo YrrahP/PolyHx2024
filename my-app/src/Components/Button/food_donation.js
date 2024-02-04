@@ -10,3 +10,4 @@ const ButtonDonFood = ({ text, style, onClick }) => {
 };
 
 export default ButtonDonFood;
+export default ButtonDonFood;
