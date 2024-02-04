@@ -12,15 +12,15 @@ import MapComponent from "./Components/Map/Map";
 
 
 function App() {
-  const [selectedLocation] = useState({
-    lat: 45.50492914373302,
-    lng: -73.6132153085261,
-  });
+  
   const [filterType, setFilterType] = useState('');
   const [locations, setLocations] = useState([]);
   const [userLocation, setUserLocation] = useState({ latitude: 0, longitude: 0 });
   const [maxDistance, setMaxDistance] = useState(0);
-
+  const [selectedLocation, setSelectedLocation] = useState({
+      lat: 45,
+      lng: 50,
+    });
   const ButtonClickDonBox = () => {
     setFilterType("clothesCan");
     console.log(filterType);
@@ -40,6 +40,17 @@ function App() {
     setMaxDistance(newDistance);
     console.log(newDistance);
   };
+
+  useEffect(() => {
+    if (userLocation.latitude && userLocation.longitude) {
+      setSelectedLocation({
+        lat: userLocation.latitude,
+        lng: userLocation.longitude
+      });
+      console.log(selectedLocation);
+      console.log(userLocation);
+    }
+  }, [userLocation]);
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -93,7 +104,7 @@ function App() {
           <LocationGrid locations={locations} />
         </div>
         <div className='map-container'>
-          <MapComponent selectedLocation={selectedLocation}  locations={locations} />
+          <MapComponent selectedLocation={selectedLocation}  locations={locations} userLocation={userLocation}/>
         </div>
       
       </div>
