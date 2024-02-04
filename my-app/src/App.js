@@ -97,7 +97,7 @@ function App() {
 
       <Distance onDistanceChange={handleDistanceChange} />
       <LocationGrid locations={locations} />
-      <MapComponent selectedLocation={selectedLocation} />
+      <MapComponent selectedLocation={selectedLocation}  locations={locations} />
     </div>
     
   );

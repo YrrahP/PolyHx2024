@@ -4,12 +4,10 @@ import "./map.css";
 
 const GOOGLE_MAPS_KEY = "AIzaSyB1kropwH-5_iC-C5omKlgfw0XTKBUvNIU";
 
-const MapComponent = ({ selectedLocation }) => {
+const MapComponent = ({ selectedLocation, locations }) => {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: GOOGLE_MAPS_KEY
   });
-
-  const [selectedPlace, setSelectedPlace] = useState(null);
 
   const mapRef = React.useRef();
   const onMapLoad = React.useCallback((map) => {
@@ -30,6 +28,15 @@ const MapComponent = ({ selectedLocation }) => {
         zoom={14}
         onLoad={onMapLoad}
       >
+        {locations.map((location) => (
+          <Marker
+            key={location.id}
+            position={{
+              lat: location.location.latitude,
+              lng: location.location.longitude
+            }}
+          />
+        ))}
 
       </GoogleMap>
     </div>
