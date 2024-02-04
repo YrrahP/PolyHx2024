@@ -1,7 +1,7 @@
 import React from 'react';
-import './ComponentsStyle/donation_boxes.css'; // Assurez-vous d'inclure la feuille de style
+import './donation_boxes.css'; // Assurez-vous d'inclure la feuille de style
 
-const Button = ({ text, style }) => {
+const ButtonDonBox = ({ text, style }) => {
     return (
         <button className="flat-button" style={style}>
             {text}
@@ -9,4 +9,4 @@ const Button = ({ text, style }) => {
     );
 };
 
-export default Button;
+export default ButtonDonBox;

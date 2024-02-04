@@ -1,13 +1,12 @@
 import './App.css';
-import Button from "./Components/donation_boxes";
-import Header from "./Components/header"
-import './Components/ComponentsStyle/header.css'
+import ButtonDonBox from "./Components/donation_boxes/donation_boxes";
+import Header from "./Components/Header/header"
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Button />
+      <ButtonDonBox />
 
 
     </div>
