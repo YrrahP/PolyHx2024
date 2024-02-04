@@ -10,7 +10,7 @@ function Distance({ onDistanceChange }) {
         onDistanceChange(newValue);
     };
     const displayDistance = (value) => {
-        return value > 1000 ? `${(value / 1000).toFixed(2)} kilomètres` : `${value} mètres`;
+        return value > 1000 ? `${(value / 1000).toFixed(2)} km` : `${value} m`;
     }
     const trackStyle = {
         backgroundColor: 'red', // Couleur conditionnelle
