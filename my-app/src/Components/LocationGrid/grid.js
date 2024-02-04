@@ -7,7 +7,7 @@ const LocationGrid = ({ locations }) => {
       <div>
         {locations.slice(0, 5).map((location, index) => (
           <div key={index} className="location-card">
-            <h3>{location.type}</h3>
+            <h3>{location.name}</h3>
             <p>{location.description}</p>
           </div>
         ))}

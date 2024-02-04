@@ -80,7 +80,7 @@ function App() {
           onClick = {ButtonClickDonFood}
           />
           <ButtonTrashCan 
-          text = "Poubelles"
+          text = "Collecteur de déchêts"
           onClick = {ButtonClickTrashCan}
           />
         </div>

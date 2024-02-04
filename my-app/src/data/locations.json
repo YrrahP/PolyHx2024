@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "name": "Collecteur de déchêts",
         "type": "trashCan",
         "location": {
             "latitude": 45.50173962736477,
@@ -10,6 +11,7 @@
     },
     {
         "id": 1,
+        "name": "Boîte de dons de vêtements",
         "type": "clothesCan",
         "location": {
             "latitude": 45.507462297652246, 
@@ -19,6 +21,7 @@
     },
     {
         "id": 1,
+        "name": "Banque alimentaire",
         "type": "foodCan",
         "location": {
             "latitude": 45.509745220806245,
@@ -29,6 +32,7 @@
     {
         "id": 2,
         "type": "foodCan",
+        "name": "Banque alimentaire",
         "location": {
             "latitude": 45.43793493578155,
             "longitude": -73.62507570391486
@@ -37,6 +41,7 @@
     },
     {
         "id": 2,
+        "name": "Collecteur de déchêts",
         "type": "trashCan",
         "location": {
             "latitude": 45.44630233232841, 
