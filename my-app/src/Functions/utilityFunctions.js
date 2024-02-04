@@ -32,3 +32,8 @@ function filterLocationsByDistanceAndType(userLat, userLon, locations, maxDistan
             return distanceA - distanceB;
         });
 }
+
+
+
+
+
